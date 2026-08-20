@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>卢华｜2D 像素美术与角色动画作品集</title>
+    <meta
+      name="description"
+      content="卢华的 2D 像素美术作品集，展示《蛋岛的鸟》中的鸟类角色、Sprite 动画、配色变体、场景设施、UI/Icon 与 Unity 游戏资产落地。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./theme.css" />
+  </head>
+  <body>
+    <main class="desktop-shell" aria-label="卢华的个人桌面作品集">
+      <div class="desktop-bg" aria-hidden="true">
+        <img class="bg-sky" src="./assets/scene/sky.png" alt="" />
+        <img class="bg-far" src="./assets/scene/mountain-far.png" alt="" />
+        <img class="bg-middle" src="./assets/scene/mountain-middle.png" alt="" />
+        <img class="bg-near" src="./assets/scene/mountain-near.png" alt="" />
+        <img class="bg-tree" src="./assets/scene/sacred-tree.png" alt="" />
+      </div>
+
+      <nav class="desktop-icons" aria-label="桌面快捷方式">
+        <button class="desktop-icon active" type="button" data-app="home" aria-pressed="true">
+          <span class="icon-frame"><img src="./assets/ui/icon-bird.png" alt="" /></span>
+          <span>主页</span>
+        </button>
+        <button class="desktop-icon" type="button" data-app="works" aria-pressed="false">
+          <span class="icon-frame"><img src="./assets/ui/paper.png" alt="" /></span>
+          <span>作品</span>
+        </button>
+        <button class="desktop-icon" type="button" data-app="resume" aria-pressed="false">
+          <span class="icon-frame"><img src="./assets/ui/book-page.png" alt="" /></span>
+          <span>简历</span>
+        </button>
+        <button class="desktop-icon" type="button" data-app="contact" aria-pressed="false">
+          <span class="icon-frame"><img src="./assets/ui/icon-store.png" alt="" /></span>
+          <span>联系</span>
+        </button>
+      </nav>
+
+      <section class="window-area" aria-live="polite">
+        <article class="win98-window active" data-panel="home" aria-labelledby="home-title">
+          <header class="win-titlebar">
+            <span>个人简介.exe</span>
+            <div class="win-controls" aria-hidden="true"><i></i><i></i><i></i></div>
+          </header>
+          <div class="win-body home-panel">
+            <div class="profile-card">
+              <div class="profile-avatar" aria-hidden="true">
+                <img src="./assets/birds/portrait-01.png" alt="" />
+                <img src="./assets/birds/portrait-02.png" alt="" />
+                <img src="./assets/birds/portrait-03.png" alt="" />
+              </div>
+              <div class="profile-copy">
+                <p class="label">2D Pixel Artist / Sprite Animator</p>
+                <h1 id="home-title">卢华</h1>
+                <p class="summary">
+                  专注像素生物、角色动画与游戏视觉资产。我希望每一个小尺寸角色既保留清晰的物种特征，也能在真实玩法中持续表达状态与性格。
+                </p>
+              </div>
+            </div>
+
+            <div class="home-spec">
+              <h2>工作方向：</h2>
+              <p>2D 像素美术 - 生物角色 / 动作序列帧 / 配色变体 / 场景设施 / UI 与 Icon</p>
+              <p>游戏资产落地 - 规格制定 / 批量生产 / Unity 切图、动画与实机显示检查</p>
+            </div>
+
+            <div class="home-status">
+              <span>《蛋岛的鸟》Steam Demo 已上架</span>
+              <span>小红书 18,000+ 粉丝</span>
+              <span>开放外包 / 兼职 / 独立游戏协作</span>
+            </div>
+
+            <footer class="window-footer">
+              <strong>合作请联系</strong>
+              <a href="mailto:lutiefei23@gmail.com">lutiefei23@gmail.com</a>
+              <span>WeChat: 13364065890</span>
+            </footer>
+          </div>
+        </article>
+
+        <article class="win98-window works-window" data-panel="works" aria-label="作品">
+          <header class="win-titlebar">
+            <span>作品.folder</span>
+            <div class="win-controls" aria-hidden="true"><i></i><i></i><i></i></div>
+          </header>
+          <div class="win-body works-browser">
+            <nav class="works-project-tabs" role="tablist" aria-label="作品项目">
+              <button class="project-tab active" type="button" role="tab" data-project-tab="index" aria-controls="project-index" aria-selected="true">项目总览</button>
+              <button class="project-tab" type="button" role="tab" data-project-tab="eggisland" aria-controls="project-eggisland" aria-selected="false">蛋岛的鸟</button>
+            </nav>
+
+            <section class="works-project-panel works-project-index" id="project-index" role="tabpanel" data-project-panel="index">
+              <div class="window-heading">
+                <div>
+                  <p class="label">Selected Projects</p>
+                  <h2>选择项目</h2>
+                  <p>先进入项目，再浏览该项目下的角色、动画、UI/Icon、场景与系统落地内容。</p>
+                </div>
+                <span class="project-count">1 project</span>
+              </div>
+              <div class="project-list">
+                <a class="project-card project-card-link" href="#works/eggisland" data-project-open="eggisland">
+                  <figure class="project-card-preview">
+                    <img src="./assets/project/characters/character-roster.png" alt="《蛋岛的鸟》多物种成鸟与雏鸟角色总览" />
+                  </figure>
+                  <div>
+                    <span>主项目</span>
+                    <h3>《蛋岛的鸟》：鸟类养成桌宠</h3>
+                    <p>围绕种植、照料、成长、繁殖、孵化与收集展开的 2D 像素游戏。项目作品涵盖多物种角色、动作序列、遗传配色、场景设施、UI/Icon 与 Unity 落地。</p>
+                    <strong class="project-enter">进入项目 →</strong>
+                  </div>
+                  <dl>
+                    <div><dt>职责</dt><dd>像素美术 / 动画 / UI / 场景 / 视觉规范 / Unity 落地</dd></div>
+                    <div><dt>成果</dt><dd>Steam Demo、小红书 18,000+ 粉丝</dd></div>
+                    <div><dt>内容</dt><dd>19 组已整理作品</dd></div>
+                  </dl>
+                </a>
+              </div>
+            </section>
+
+            <section class="works-project-panel works-project-detail" id="project-eggisland" role="tabpanel" data-project-panel="eggisland" hidden>
+            <div class="window-heading">
+              <div>
+                <p class="label">Selected Works</p>
+                <h2 id="works-title">《蛋岛的鸟》视觉资产与游戏落地</h2>
+              </div>
+              <span class="file-count">19 items</span>
+            </div>
+
+            <section class="work-detail" aria-live="polite" aria-label="当前选中的作品详情">
+              <figure class="work-detail-media" data-work-detail-media></figure>
+              <div class="work-detail-copy">
+                <span class="work-detail-kicker" data-work-detail-kicker>项目总览</span>
+                <h3 data-work-detail-title>从一只鸟，扩展成可持续生产的像素资产体系</h3>
+                <p data-work-detail-text>
+                  角色部分按角色设计、配色变体与设计改进展开，动画部分进一步呈现鸟类完整动作库与 NPC 状态切换，再延伸到场景设施、UI/Icon 与实机整合。点击下方条目，可以查看每组素材解决的具体视觉问题。
+                </p>
+              </div>
+            </section>
+
+            <div class="filters" aria-label="作品筛选">
+              <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">全部</button>
+              <button class="filter-button" type="button" data-filter="character" aria-pressed="false">角色</button>
+              <button class="filter-button" type="button" data-filter="animation" aria-pressed="false">动画</button>
+              <button class="filter-button" type="button" data-filter="ui" aria-pressed="false">UI/Icon</button>
+              <button class="filter-button" type="button" data-filter="scene" aria-pressed="false">场景</button>
+              <button class="filter-button" type="button" data-filter="system" aria-pressed="false">系统/落地</button>
+            </div>
+
+            <div class="work-grid">
+              <article class="work-card wide" data-category="character">
+                <figure><img src="./assets/project/characters/character-roster.png" alt="玄凤、牡丹、虎皮、小太阳、七彩文鸟、粉红凤头、凯克、大葵花、摩鹿加、和尚、雨伞与棕榈凤头鹦鹉的成鸟和雏鸟设计总览" /></figure>
+                <div><span>角色设计</span><h3>12 个物种：成鸟与雏鸟设计</h3><p>为 12 个现有物种分别建立成鸟与雏鸟形态，在统一动作规格中保留体型、羽冠、喙型、尾羽和年龄差异，形成可持续扩展的角色阵容。</p></div>
+              </article>
+              <article class="work-card wide" data-category="character">
+                <figure><img src="./assets/birds/budgerigar-palette.png" alt="同一飞行动作上的虎皮鹦鹉多种羽色与翅纹配色矩阵" /></figure>
+                <div><span>配色变体</span><h3>虎皮鹦鹉：翅纹与羽色矩阵</h3><p>在统一轮廓与动作规格中组合黄绿、蓝白、灰紫、脸色、性别与翅纹，让大规模羽色变体仍保持清楚的物种识别与收藏差异。</p></div>
+              </article>
+              <article class="work-card wide" data-category="character">
+                <figure><img src="./assets/project/characters/palette-gouldian.png" alt="七彩文鸟由头色、胸色、体色、性别和 Ino 系组合成的 12 种代表性配色" /></figure>
+                <div><span>配色变体</span><h3>七彩文鸟：身体分区组合</h3><p>将头色、胸色、体色、性别与 Ino 系拆成可组合分区，选取 12 组代表方案验证高饱和、多色块角色在小尺寸下的明度层级。</p></div>
+              </article>
+              <article class="work-card wide" data-category="character">
+                <figure><img src="./assets/project/characters/palette-lovebird.png" alt="同一牡丹鹦鹉轮廓应用 24 组 LUT 羽色替换方案" /></figure>
+                <div><span>配色变体</span><h3>牡丹鹦鹉：24 组 LUT 配色</h3><p>把羽色分区编码进统一色板，通过 LUT 将 24 组外观同步应用到整套动作，减少逐帧重绘，并让新增配色可以稳定进入繁殖与收集系统。</p></div>
+              </article>
+              <article class="work-card wide" data-category="character">
+                <figure><img src="./assets/project/characters/character-redesign.png" alt="和尚鹦鹉、玄凤鹦鹉与牡丹鹦鹉旧版和现版角色设计并排对照" /></figure>
+                <div><span>设计改进</span><h3>旧版到现版：为配色系统重做角色</h3><p>以和尚、玄凤与牡丹鹦鹉为例，重新收紧剪影、调整头身比与颜色分区；既适配系统化换色，也让角色更符合亲和、易读的市场视觉偏好。</p></div>
+              </article>
+              <article class="work-card" data-category="animation">
+                <figure><img src="./assets/project/animation/bird-action-library.gif" alt="七彩文鸟、牡丹鹦鹉、玄凤鹦鹉和棕榈凤头鹦鹉的 11 类动作同步循环总览" /></figure>
+                <div><span>动作系统</span><h3>4 种鸟：完整动作库</h3><p>选取体型、轮廓与配色差异明显的四种鸟，将待机、移动、进食、互动、睡眠、排泄与求偶等 11 类动作放进同一张动态总览，直观呈现从序列帧到游戏循环动画的完整覆盖。</p></div>
+              </article>
+              <article class="work-card" data-category="animation">
+                <figure><img src="./assets/project/animation/npc-action-library.gif" alt="小岛引导角色和尹先生 NPC 的待机、行走、唤醒与休眠动作总览" /></figure>
+                <div><span>NPC 动画</span><h3>状态切换与场景移动</h3><p>把小岛引导角色的待机、行走、唤醒与休眠状态，以及尹先生的待机与移动动作集中展示，说明 NPC 如何通过动作衔接承担引导、反馈与场景叙事。</p></div>
+              </article>
+              <article class="work-card" data-category="animation">
+                <figure><img src="./assets/project/gouldian-sing.gif" alt="七彩文鸟鸣唱状态的像素循环动画" /></figure>
+                <div><span>状态动画</span><h3>七彩文鸟：唱歌</h3><p>用喙部开合、身体起伏与停顿节奏表达鸣唱状态，同时服务角色个性与音符产出反馈。</p></div>
+              </article>
+              <article class="work-card" data-category="animation">
+                <figure><img src="./assets/project/sunconure-poop.gif" alt="小太阳鹦鹉排泄与状态提示的像素循环动画" /></figure>
+                <div><span>生活动作</span><h3>小太阳鹦鹉：排泄反馈</h3><p>把养成玩法中的日常生理状态转化为轻量、可读的角色动作，为后续清理与照料行为提供明确提示。</p></div>
+              </article>
+              <article class="work-card wide" data-category="ui">
+                <figure><img src="./assets/project/ui/icon-matrix.png" alt="按状态、交互、筛选、作物、蛋与孵化及鸟类遗传分类的 178 项实装图标矩阵" /></figure>
+                <div><span>完整图标矩阵</span><h3>178 项实装 ICON：按系统用途分类</h3><p>从场景、Prefab 与配置的真实引用反查图标，按状态 HUD、交互入口、物品筛选、作物状态、蛋与孵化、通用遗传标记及五类鸟种遗传信息分组，避免把草稿或废弃素材混入作品展示。</p></div>
+              </article>
+              <article class="work-card" data-category="scene">
+                <figure class="scene-preview" aria-label="由远山、中景草地和主树构成的蛋岛像素场景分层">
+                  <img src="./assets/scene/mountain-far.png" alt="蛋岛远山背景层" />
+                  <img src="./assets/scene/sacred-tree.png" alt="蛋岛主树近景活动层" />
+                </figure>
+                <div><span>环境分层</span><h3>岛屿远景与角色活动层</h3><p>将天空、远山、中景与近地面拆成独立层级，以较低对比度承托高饱和鸟类，并为视差和时间氛围调整保留空间。</p></div>
+              </article>
+              <article class="work-card" data-category="scene">
+                <figure><img src="./assets/project/guide/main-tree.png" alt="包含树冠、浅色树干、巢与树洞的蛋岛主树像素资产" /></figure>
+                <div><span>核心地标</span><h3>主树：栖息地与玩法中心</h3><p>以多层树冠、浅色树干和清晰洞口建立场景焦点，同时承载鸟巢、树洞、设施成长与长期升级目标。</p></div>
+              </article>
+              <article class="work-card wide" data-category="scene">
+                <figure class="habitat-board" aria-label="玄凤栖息地概念图、主树与多种可放置树木设施的组合展示">
+                  <img src="./assets/project/habitat-cockatiel.png" alt="玄凤栖息地插图" />
+                  <img src="./assets/project/main-tree-asset.png" alt="主树完整像素资产" />
+                  <img src="./assets/project/device-acacia.png" alt="金合欢装置资产" />
+                  <img src="./assets/project/device-baobab.png" alt="猴面包树装置资产" />
+                  <img src="./assets/project/device-banksia.png" alt="Banksia 装置资产" />
+                  <img src="./assets/project/device-kauri.png" alt="Kauri 装置资产" />
+                </figure>
+                <div><span>环境与设施</span><h3>栖息地概念与可放置树木设施</h3><p>从栖息地气质参考到 Banksia、猴面包树、Kauri 和金合欢等可放置装置，让环境资产同时承担休憩、互动、装饰和成长目标。</p></div>
+              </article>
+              <article class="work-card" data-category="ui">
+                <figure><img src="./assets/project/ui/bird-cards.png" alt="实机小鸟卡片列表及稀有外观、成鸟档案与物种识别卡片细节" /></figure>
+                <div><span>小鸟卡片</span><h3>收集、身份与状态入口</h3><p>卡片统一承载角色头像、名称、物种与提醒信息；在收集视图中保持快速扫读，并通过选中态继续展开个体状态，连接图鉴与养成操作。</p></div>
+              </article>
+              <article class="work-card wide" data-category="ui">
+                <figure><img src="./assets/project/ui/bird-hud.png" alt="卡片选中态的四项即时状态与完整鸟类档案 HUD 对照" /></figure>
+                <div><span>小鸟 HUD</span><h3>快速状态与完整档案的两级信息密度</h3><p>卡片选中态只显示心情、饱食、健康与成长等即时反馈；完整档案再展开性别、等级、状态警告与喜好食物，让高频照料和深度查看各自保持清晰。</p></div>
+              </article>
+              <article class="work-card wide" data-category="ui">
+                <figure><img src="./assets/project/ingame-inventory-compost-crop.png" alt="Unity 实机中的背包物品、堆肥操作、音符货币与主树目标界面" /></figure>
+                <div><span>仓库 / 背包</span><h3>物品筛选、数量操作与资源流转</h3><p>以仓库格位承载食物、种子与工具，通过分类筛选、数量选择和堆肥弹窗完成资源操作；音符货币与主树目标则在同一视觉体系中提示去向。</p></div>
+              </article>
+              <article class="work-card wide" data-category="ui">
+                <figure><img src="./assets/project/ui/shop.png" alt="由项目实装商店面板、商品卡片和商品配置还原的岛屿商店界面" /></figure>
+                <div><span>商店</span><h3>种子、食物、鸟蛋与设施的统一购买界面</h3><p>依据实装商店面板、商品卡片 Prefab 与商品配置还原展示，用一致的图标底板、名称区和价格区组织多类商品，兼顾快速浏览和价格比较。</p></div>
+              </article>
+              <article class="work-card wide proof-card" data-category="system">
+                <figure class="system-proof" aria-label="蛋岛的鸟项目标志与角色、变体、状态、界面资产生产规范摘要">
+                  <img src="./assets/project/egg-island-logo.png" alt="蛋岛的鸟项目标志" />
+                  <ul>
+                    <li>物种模板：统一画布、角色基线、身体分区与动作命名。</li>
+                    <li>配色变体：同一动作稳定承载不同羽色、性别与稀有外观。</li>
+                    <li>生命周期：蛋、雏鸟、成鸟、互动、生病与睡眠均有对应状态资产。</li>
+                    <li>界面落地：背包、鸟卡、孵化、商店与教程共享视觉规范。</li>
+                  </ul>
+                </figure>
+                <div><span>生产方法</span><h3>从单张像素图到可扩展资产体系</h3><p>通过统一画布、角色基线、动作命名、颜色分区和状态拆分，让同一套资产能持续支持新物种、新羽色和新玩法，而不是每次从头制作。</p></div>
+              </article>
+              <article class="work-card wide proof-card" data-category="system">
+                <figure class="system-map" aria-label="种植、喂食、成长、繁殖、孵化与收集组成的养成玩法循环">
+                  <div>种植</div><span>→</span><div>喂食</div><span>→</span><div>成长</div><span>→</span><div>繁殖</div><span>→</span><div>孵化</div><span>→</span><div>收集</div>
+                </figure>
+                <div><span>视觉策划</span><h3>视觉如何服务完整养成循环</h3><p>从种植、喂食和成长，到繁殖、孵化与收集，每个玩法节点都需要对应的角色动作、物件状态、图标或界面反馈，形成连续的视觉体验。</p></div>
+              </article>
+            </div>
+            </section>
+          </div>
+        </article>
+
+        <article class="win98-window" data-panel="resume" aria-labelledby="resume-title">
+          <header class="win-titlebar">
+            <span>简历.txt</span>
+            <div class="win-controls" aria-hidden="true"><i></i><i></i><i></i></div>
+          </header>
+          <div class="win-body">
+            <div class="window-heading"><div><p class="label">Profile</p><h2 id="resume-title">简历摘要</h2></div></div>
+            <div class="resume-grid">
+              <section><h3>当前定位</h3><p>以像素生物角色和 Sprite 动画为核心的独立游戏创作者，能够继续完成配色变体、UI/Icon、场景设施与 Unity 内资产落地。具备内容策划、项目推进和社区运营经验，现开放外包、兼职与独立游戏协作。</p></section>
+              <section>
+                <h3>核心能力</h3>
+                <ul>
+                  <li>像素生物与角色设计：物种剪影、比例、羽色与年龄差异</li>
+                  <li>Sprite 动画：待机、移动、进食、互动、情绪与特殊状态</li>
+                  <li>批量变体：统一模板、多配色、稀有外观与图鉴资产</li>
+                  <li>游戏视觉：Icon、HUD、图鉴、背包、商店与系统 UI</li>
+                  <li>项目落地：资产规格、切图命名、Unity 动画与实机显示检查</li>
+                </ul>
+              </section>
+              <section>
+                <h3>经历线索</h3>
+                <ol>
+                  <li><strong>2024 下半年 - 至今</strong><span>独立推进《蛋岛的鸟》的像素视觉、内容设计、Unity 落地与社区运营。</span></li>
+                  <li><strong>2023 - 2024 上半年</strong><span>重庆市长物集艺文化艺术有限公司｜内容策划。</span></li>
+                  <li><strong>过往经历</strong><span>文化艺术项目、策展执行、平面设计与内容运营。</span></li>
+                </ol>
+              </section>
+            </div>
+          </div>
+        </article>
+
+        <article class="win98-window" data-panel="contact" aria-labelledby="contact-title">
+          <header class="win-titlebar">
+            <span>联系.mail</span>
+            <div class="win-controls" aria-hidden="true"><i></i><i></i><i></i></div>
+          </header>
+          <div class="win-body contact-panel">
+            <div>
+              <p class="label">Contact</p>
+              <h2 id="contact-title">开放像素美术外包、兼职与独立游戏协作</h2>
+              <p>优先合作方向：像素生物与角色、动作序列帧、配色变体、Icon/UI、场景设施，以及独立游戏的持续美术支持。联系时欢迎附上项目类型、目标平台、像素规格、预计资产量、时间范围与预算区间。</p>
+            </div>
+            <div class="contact-list">
+              <a href="mailto:lutiefei23@gmail.com">Email: lutiefei23@gmail.com</a>
+              <span>WeChat: 13364065890</span>
+              <span>小红书：[补真实主页链接]</span>
+              <span>Steam《蛋岛的鸟》：[补真实商店页链接]</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <aside class="bird-strip" aria-label="桌面上的鸟类素材">
+        <img src="./assets/birds/portrait-01.png" alt="鸟类角色头像 1" />
+        <img src="./assets/birds/portrait-02.png" alt="鸟类角色头像 2" />
+        <img src="./assets/birds/portrait-03.png" alt="鸟类角色头像 3" />
+        <img src="./assets/birds/portrait-04.png" alt="鸟类角色头像 4" />
+        <img src="./assets/birds/portrait-05.png" alt="鸟类角色头像 5" />
+        <img class="bird-strip-wide" src="./assets/birds/sunconure-pet.png" alt="小太阳鹦鹉互动序列帧" />
+      </aside>
+
+      <footer class="taskbar" aria-label="任务栏">
+        <button class="start-button" type="button"><span class="start-logo" aria-hidden="true"></span>Start</button>
+        <button class="task-button active" type="button" data-task-button>个人简介</button>
+        <div class="task-status">Egg Island OS</div>
+      </footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
