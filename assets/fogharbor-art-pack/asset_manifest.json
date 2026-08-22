@@ -1,0 +1,824 @@
+[
+  {
+    "category": "character_spritesheet",
+    "file": "PortfolioArtPack/assets/characters/spritesheets/mc_idle.png",
+    "source": "GameMain/Assets/Art/Sprites/Characters/mc_idle.png",
+    "note": "Keeper / main character idle spritesheet"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/mc_idle/mc_idle_00.png",
+    "source": "generated from spritesheet slicing",
+    "note": "mc_idle"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/mc_idle/mc_idle_01.png",
+    "source": "generated from spritesheet slicing",
+    "note": "mc_idle"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/mc_idle/mc_idle_02.png",
+    "source": "generated from spritesheet slicing",
+    "note": "mc_idle"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/mc_idle/mc_idle_03.png",
+    "source": "generated from spritesheet slicing",
+    "note": "mc_idle"
+  },
+  {
+    "category": "animation_gif",
+    "file": "PortfolioArtPack/assets/characters/animations/mc_idle.gif",
+    "source": "generated from spritesheet frames",
+    "note": "4 frames @ 6 fps preview"
+  },
+  {
+    "category": "character_spritesheet",
+    "file": "PortfolioArtPack/assets/characters/spritesheets/mc_walk.png",
+    "source": "GameMain/Assets/Art/Sprites/Characters/mc_walk.png",
+    "note": "Keeper / main character walk spritesheet"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/mc_walk/mc_walk_00.png",
+    "source": "generated from spritesheet slicing",
+    "note": "mc_walk"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/mc_walk/mc_walk_01.png",
+    "source": "generated from spritesheet slicing",
+    "note": "mc_walk"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/mc_walk/mc_walk_02.png",
+    "source": "generated from spritesheet slicing",
+    "note": "mc_walk"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/mc_walk/mc_walk_03.png",
+    "source": "generated from spritesheet slicing",
+    "note": "mc_walk"
+  },
+  {
+    "category": "animation_gif",
+    "file": "PortfolioArtPack/assets/characters/animations/mc_walk.gif",
+    "source": "generated from spritesheet frames",
+    "note": "4 frames @ 8 fps preview"
+  },
+  {
+    "category": "character_spritesheet",
+    "file": "PortfolioArtPack/assets/characters/spritesheets/oldman_idle.png",
+    "source": "GameMain/Assets/Art/Sprites/Characters/oldman_idle.png",
+    "note": "Recovered elder NPC idle spritesheet"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/oldman_idle/oldman_idle_00.png",
+    "source": "generated from spritesheet slicing",
+    "note": "oldman_idle"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/oldman_idle/oldman_idle_01.png",
+    "source": "generated from spritesheet slicing",
+    "note": "oldman_idle"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/oldman_idle/oldman_idle_02.png",
+    "source": "generated from spritesheet slicing",
+    "note": "oldman_idle"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/oldman_idle/oldman_idle_03.png",
+    "source": "generated from spritesheet slicing",
+    "note": "oldman_idle"
+  },
+  {
+    "category": "animation_gif",
+    "file": "PortfolioArtPack/assets/characters/animations/oldman_idle.gif",
+    "source": "generated from spritesheet frames",
+    "note": "4 frames @ 6 fps preview"
+  },
+  {
+    "category": "character_spritesheet",
+    "file": "PortfolioArtPack/assets/characters/spritesheets/oldman_walk.png",
+    "source": "GameMain/Assets/Art/Sprites/Characters/oldman_walk.png",
+    "note": "Recovered elder NPC walk spritesheet"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/oldman_walk/oldman_walk_00.png",
+    "source": "generated from spritesheet slicing",
+    "note": "oldman_walk"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/oldman_walk/oldman_walk_01.png",
+    "source": "generated from spritesheet slicing",
+    "note": "oldman_walk"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/oldman_walk/oldman_walk_02.png",
+    "source": "generated from spritesheet slicing",
+    "note": "oldman_walk"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/oldman_walk/oldman_walk_03.png",
+    "source": "generated from spritesheet slicing",
+    "note": "oldman_walk"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/oldman_walk/oldman_walk_04.png",
+    "source": "generated from spritesheet slicing",
+    "note": "oldman_walk"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/oldman_walk/oldman_walk_05.png",
+    "source": "generated from spritesheet slicing",
+    "note": "oldman_walk"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/oldman_walk/oldman_walk_06.png",
+    "source": "generated from spritesheet slicing",
+    "note": "oldman_walk"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/oldman_walk/oldman_walk_07.png",
+    "source": "generated from spritesheet slicing",
+    "note": "oldman_walk"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/oldman_walk/oldman_walk_08.png",
+    "source": "generated from spritesheet slicing",
+    "note": "oldman_walk"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/oldman_walk/oldman_walk_09.png",
+    "source": "generated from spritesheet slicing",
+    "note": "oldman_walk"
+  },
+  {
+    "category": "animation_gif",
+    "file": "PortfolioArtPack/assets/characters/animations/oldman_walk.gif",
+    "source": "generated from spritesheet frames",
+    "note": "10 frames @ 8 fps preview"
+  },
+  {
+    "category": "character_spritesheet",
+    "file": "PortfolioArtPack/assets/characters/spritesheets/kids_idle.png",
+    "source": "GameMain/Assets/Art/Sprites/Characters/kids_idle.png",
+    "note": "Recovered children NPC idle spritesheet"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/kids_idle/kids_idle_00.png",
+    "source": "generated from spritesheet slicing",
+    "note": "kids_idle"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/kids_idle/kids_idle_01.png",
+    "source": "generated from spritesheet slicing",
+    "note": "kids_idle"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/kids_idle/kids_idle_02.png",
+    "source": "generated from spritesheet slicing",
+    "note": "kids_idle"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/kids_idle/kids_idle_03.png",
+    "source": "generated from spritesheet slicing",
+    "note": "kids_idle"
+  },
+  {
+    "category": "animation_gif",
+    "file": "PortfolioArtPack/assets/characters/animations/kids_idle.gif",
+    "source": "generated from spritesheet frames",
+    "note": "4 frames @ 6 fps preview"
+  },
+  {
+    "category": "character_spritesheet",
+    "file": "PortfolioArtPack/assets/characters/spritesheets/kids_walk.png",
+    "source": "GameMain/Assets/Art/Sprites/Characters/kids_walk.png",
+    "note": "Recovered children NPC walk spritesheet"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/kids_walk/kids_walk_00.png",
+    "source": "generated from spritesheet slicing",
+    "note": "kids_walk"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/kids_walk/kids_walk_01.png",
+    "source": "generated from spritesheet slicing",
+    "note": "kids_walk"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/kids_walk/kids_walk_02.png",
+    "source": "generated from spritesheet slicing",
+    "note": "kids_walk"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/kids_walk/kids_walk_03.png",
+    "source": "generated from spritesheet slicing",
+    "note": "kids_walk"
+  },
+  {
+    "category": "animation_gif",
+    "file": "PortfolioArtPack/assets/characters/animations/kids_walk.gif",
+    "source": "generated from spritesheet frames",
+    "note": "4 frames @ 8 fps preview"
+  },
+  {
+    "category": "character_spritesheet",
+    "file": "PortfolioArtPack/assets/characters/spritesheets/cat_idle.png",
+    "source": "GameMain/Assets/Art/Sprites/Characters/cat_idle.png",
+    "note": "Cat companion idle spritesheet"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/cat_idle/cat_idle_00.png",
+    "source": "generated from spritesheet slicing",
+    "note": "cat_idle"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/cat_idle/cat_idle_01.png",
+    "source": "generated from spritesheet slicing",
+    "note": "cat_idle"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/cat_idle/cat_idle_02.png",
+    "source": "generated from spritesheet slicing",
+    "note": "cat_idle"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/cat_idle/cat_idle_03.png",
+    "source": "generated from spritesheet slicing",
+    "note": "cat_idle"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/cat_idle/cat_idle_04.png",
+    "source": "generated from spritesheet slicing",
+    "note": "cat_idle"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/cat_idle/cat_idle_05.png",
+    "source": "generated from spritesheet slicing",
+    "note": "cat_idle"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/cat_idle/cat_idle_06.png",
+    "source": "generated from spritesheet slicing",
+    "note": "cat_idle"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/cat_idle/cat_idle_07.png",
+    "source": "generated from spritesheet slicing",
+    "note": "cat_idle"
+  },
+  {
+    "category": "animation_gif",
+    "file": "PortfolioArtPack/assets/characters/animations/cat_idle.gif",
+    "source": "generated from spritesheet frames",
+    "note": "8 frames @ 8 fps preview"
+  },
+  {
+    "category": "character_spritesheet",
+    "file": "PortfolioArtPack/assets/characters/spritesheets/cat_walk.png",
+    "source": "GameMain/Assets/Art/Sprites/Characters/cat_walk.png",
+    "note": "Cat companion walk spritesheet"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/cat_walk/cat_walk_00.png",
+    "source": "generated from spritesheet slicing",
+    "note": "cat_walk"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/cat_walk/cat_walk_01.png",
+    "source": "generated from spritesheet slicing",
+    "note": "cat_walk"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/cat_walk/cat_walk_02.png",
+    "source": "generated from spritesheet slicing",
+    "note": "cat_walk"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/cat_walk/cat_walk_03.png",
+    "source": "generated from spritesheet slicing",
+    "note": "cat_walk"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/cat_walk/cat_walk_04.png",
+    "source": "generated from spritesheet slicing",
+    "note": "cat_walk"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/cat_walk/cat_walk_05.png",
+    "source": "generated from spritesheet slicing",
+    "note": "cat_walk"
+  },
+  {
+    "category": "animation_gif",
+    "file": "PortfolioArtPack/assets/characters/animations/cat_walk.gif",
+    "source": "generated from spritesheet frames",
+    "note": "6 frames @ 10 fps preview"
+  },
+  {
+    "category": "character_spritesheet",
+    "file": "PortfolioArtPack/assets/characters/spritesheets/soul.png",
+    "source": "GameMain/Assets/Art/Sprites/Characters/soul.png",
+    "note": "Lost soul idle spritesheet"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/soul_idle/soul_idle_00.png",
+    "source": "generated from spritesheet slicing",
+    "note": "soul_idle"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/soul_idle/soul_idle_01.png",
+    "source": "generated from spritesheet slicing",
+    "note": "soul_idle"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/soul_idle/soul_idle_02.png",
+    "source": "generated from spritesheet slicing",
+    "note": "soul_idle"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/characters/frames/soul_idle/soul_idle_03.png",
+    "source": "generated from spritesheet slicing",
+    "note": "soul_idle"
+  },
+  {
+    "category": "animation_gif",
+    "file": "PortfolioArtPack/assets/characters/animations/soul_idle.gif",
+    "source": "generated from spritesheet frames",
+    "note": "4 frames @ 6 fps preview"
+  },
+  {
+    "category": "character_extra",
+    "file": "PortfolioArtPack/assets/characters/spritesheets/图层 1.png",
+    "source": "GameMain/Assets/Art/Sprites/Characters/图层 1.png",
+    "note": "small character/icon exploration"
+  },
+  {
+    "category": "character_extra",
+    "file": "PortfolioArtPack/assets/characters/spritesheets/图层 2.png",
+    "source": "GameMain/Assets/Art/Sprites/Characters/图层 2.png",
+    "note": "small character/icon exploration"
+  },
+  {
+    "category": "character_extra",
+    "file": "PortfolioArtPack/assets/characters/spritesheets/goat.png",
+    "source": "GameMain/Assets/Art/Sprites/UI/goat.png",
+    "note": "small character/icon exploration"
+  },
+  {
+    "category": "environment_layer",
+    "file": "PortfolioArtPack/assets/environments/layers/BG_Sky_DayFog.png",
+    "source": "GameMain/Assets/Art/Sprites/Environment/art/Backgrounds/BG_Sky_DayFog.png",
+    "note": "day fog parallax/background layer"
+  },
+  {
+    "category": "environment_layer",
+    "file": "PortfolioArtPack/assets/environments/layers/BG_FarMountain_DayFog.png",
+    "source": "GameMain/Assets/Art/Sprites/Environment/art/Backgrounds/BG_FarMountain_DayFog.png",
+    "note": "day fog parallax/background layer"
+  },
+  {
+    "category": "environment_layer",
+    "file": "PortfolioArtPack/assets/environments/layers/BG_SeaBase_DayFog.png",
+    "source": "GameMain/Assets/Art/Sprites/Environment/art/Backgrounds/BG_SeaBase_DayFog.png",
+    "note": "day fog parallax/background layer"
+  },
+  {
+    "category": "environment_layer",
+    "file": "PortfolioArtPack/assets/environments/layers/BG_CloudBase_DayFog.png",
+    "source": "GameMain/Assets/Art/Sprites/Environment/art/Backgrounds/BG_CloudBase_DayFog.png",
+    "note": "day fog parallax/background layer"
+  },
+  {
+    "category": "environment_layer",
+    "file": "PortfolioArtPack/assets/environments/layers/BG_Cloud_DayFog.png",
+    "source": "GameMain/Assets/Art/Sprites/Environment/art/Backgrounds/BG_Cloud_DayFog.png",
+    "note": "day fog parallax/background layer"
+  },
+  {
+    "category": "environment_layer",
+    "file": "PortfolioArtPack/assets/environments/layers/fog1.png",
+    "source": "GameMain/Assets/Art/Sprites/Environment/art/Backgrounds/fog1.png",
+    "note": "day fog parallax/background layer"
+  },
+  {
+    "category": "environment_layer",
+    "file": "PortfolioArtPack/assets/environments/layers/fog2.png",
+    "source": "GameMain/Assets/Art/Sprites/Environment/art/Backgrounds/fog2.png",
+    "note": "day fog parallax/background layer"
+  },
+  {
+    "category": "environment_layer",
+    "file": "PortfolioArtPack/assets/environments/layers/fog3.png",
+    "source": "GameMain/Assets/Art/Sprites/Environment/art/Backgrounds/fog3.png",
+    "note": "day fog parallax/background layer"
+  },
+  {
+    "category": "environment_layer",
+    "file": "PortfolioArtPack/assets/environments/layers/fog5.png",
+    "source": "GameMain/Assets/Art/Sprites/Environment/art/Backgrounds/fog5.png",
+    "note": "day fog parallax/background layer"
+  },
+  {
+    "category": "environment_layer",
+    "file": "PortfolioArtPack/assets/environments/layers/fog6.png",
+    "source": "GameMain/Assets/Art/Sprites/Environment/art/Backgrounds/fog6.png",
+    "note": "day fog parallax/background layer"
+  },
+  {
+    "category": "environment_layer",
+    "file": "PortfolioArtPack/assets/environments/layers/fog7.png",
+    "source": "GameMain/Assets/Art/Sprites/Environment/art/Backgrounds/fog7.png",
+    "note": "day fog parallax/background layer"
+  },
+  {
+    "category": "environment_layer",
+    "file": "PortfolioArtPack/assets/environments/layers/fog14.png",
+    "source": "GameMain/Assets/Art/Sprites/Environment/art/Backgrounds/fog14.png",
+    "note": "day fog parallax/background layer"
+  },
+  {
+    "category": "environment_scene_part",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/Scene_Lighthouse_Body.png",
+    "source": "GameMain/Assets/Art/Sprites/Environment/art/Lighthouse/Scene_Lighthouse_Body.png",
+    "note": "foreground/prop/boat scene part"
+  },
+  {
+    "category": "environment_scene_part",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/Scene_Lighthouse_Bulb.png",
+    "source": "GameMain/Assets/Art/Sprites/Environment/art/Lighthouse/Light/Scene_Lighthouse_Bulb.png",
+    "note": "foreground/prop/boat scene part"
+  },
+  {
+    "category": "environment_scene_part",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/FX_Lighthouse_Glow.png",
+    "source": "GameMain/Assets/Art/Sprites/Environment/art/Lighthouse/Light/FX_Lighthouse_Glow.png",
+    "note": "foreground/prop/boat scene part"
+  },
+  {
+    "category": "environment_scene_part",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/Scene_House_Front.png",
+    "source": "GameMain/Assets/Art/Sprites/Environment/art/Scene_House_Front.png",
+    "note": "foreground/prop/boat scene part"
+  },
+  {
+    "category": "environment_scene_part",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/Scene_Dock_Back.png",
+    "source": "GameMain/Assets/Art/Sprites/Environment/art/Scene_Dock_Back.png",
+    "note": "foreground/prop/boat scene part"
+  },
+  {
+    "category": "environment_scene_part",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/Scene_Dock_Front.png",
+    "source": "GameMain/Assets/Art/Sprites/Environment/art/Scene_Dock_Front.png",
+    "note": "foreground/prop/boat scene part"
+  },
+  {
+    "category": "environment_scene_part",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/boat_back1.png",
+    "source": "GameMain/Assets/Art/Sprites/Environment/art/boat/boat_back1.png",
+    "note": "foreground/prop/boat scene part"
+  },
+  {
+    "category": "environment_scene_part",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/boat_front.png",
+    "source": "GameMain/Assets/Art/Sprites/Environment/art/boat/boat_front.png",
+    "note": "foreground/prop/boat scene part"
+  },
+  {
+    "category": "environment_scene_part",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/water_start.png",
+    "source": "GameMain/Assets/Art/Sprites/Environment/art/boat/water_start.png",
+    "note": "foreground/prop/boat scene part"
+  },
+  {
+    "category": "environment_scene_part",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/water_walking.png",
+    "source": "GameMain/Assets/Art/Sprites/Environment/art/boat/water_walking.png",
+    "note": "foreground/prop/boat scene part"
+  },
+  {
+    "category": "environment_scene_part",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/water_stop.png",
+    "source": "GameMain/Assets/Art/Sprites/Environment/art/boat/water_stop.png",
+    "note": "foreground/prop/boat scene part"
+  },
+  {
+    "category": "environment_scene_part",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/lanten.png",
+    "source": "GameMain/Assets/Art/Sprites/Environment/art/lanten.png",
+    "note": "foreground/prop/boat scene part"
+  },
+  {
+    "category": "environment_scene_part",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/luwei.png",
+    "source": "GameMain/Assets/Art/Sprites/Environment/art/luwei.png",
+    "note": "foreground/prop/boat scene part"
+  },
+  {
+    "category": "vfx_sprite",
+    "file": "PortfolioArtPack/assets/vfx/Ripple_Line_00.png",
+    "source": "GameMain/Assets/Art/Sprites/VFX/Water/Ripples/Ripple_Line_00.png",
+    "note": "water/fog/light/memory VFX sprite"
+  },
+  {
+    "category": "vfx_sprite",
+    "file": "PortfolioArtPack/assets/vfx/Ripple_Line_01.png",
+    "source": "GameMain/Assets/Art/Sprites/VFX/Water/Ripples/Ripple_Line_01.png",
+    "note": "water/fog/light/memory VFX sprite"
+  },
+  {
+    "category": "vfx_sprite",
+    "file": "PortfolioArtPack/assets/vfx/Ripple_Line_02.png",
+    "source": "GameMain/Assets/Art/Sprites/VFX/Water/Ripples/Ripple_Line_02.png",
+    "note": "water/fog/light/memory VFX sprite"
+  },
+  {
+    "category": "vfx_sprite",
+    "file": "PortfolioArtPack/assets/vfx/Ripple_Line_03.png",
+    "source": "GameMain/Assets/Art/Sprites/VFX/Water/Ripples/Ripple_Line_03.png",
+    "note": "water/fog/light/memory VFX sprite"
+  },
+  {
+    "category": "vfx_sprite",
+    "file": "PortfolioArtPack/assets/vfx/Ripple_Line_04.png",
+    "source": "GameMain/Assets/Art/Sprites/VFX/Water/Ripples/Ripple_Line_04.png",
+    "note": "water/fog/light/memory VFX sprite"
+  },
+  {
+    "category": "vfx_sprite",
+    "file": "PortfolioArtPack/assets/vfx/Ripple_Line_05.png",
+    "source": "GameMain/Assets/Art/Sprites/VFX/Water/Ripples/Ripple_Line_05.png",
+    "note": "water/fog/light/memory VFX sprite"
+  },
+  {
+    "category": "vfx_sprite",
+    "file": "PortfolioArtPack/assets/vfx/Foam_Streak_01.png",
+    "source": "GameMain/Assets/Art/Sprites/VFX/Water/Foam_Streak_01.png",
+    "note": "water/fog/light/memory VFX sprite"
+  },
+  {
+    "category": "vfx_sprite",
+    "file": "PortfolioArtPack/assets/vfx/PH_Fog.png",
+    "source": "GameMain/Assets/Art/Sprites/VFX/PH_Fog.png",
+    "note": "water/fog/light/memory VFX sprite"
+  },
+  {
+    "category": "vfx_sprite",
+    "file": "PortfolioArtPack/assets/vfx/PH_GoldenPath.png",
+    "source": "GameMain/Assets/Art/Sprites/VFX/PH_GoldenPath.png",
+    "note": "water/fog/light/memory VFX sprite"
+  },
+  {
+    "category": "vfx_sprite",
+    "file": "PortfolioArtPack/assets/vfx/PH_LightBeam.png",
+    "source": "GameMain/Assets/Art/Sprites/VFX/PH_LightBeam.png",
+    "note": "water/fog/light/memory VFX sprite"
+  },
+  {
+    "category": "vfx_sprite",
+    "file": "PortfolioArtPack/assets/vfx/PH_MemoryReveal.png",
+    "source": "GameMain/Assets/Art/Sprites/VFX/PH_MemoryReveal.png",
+    "note": "water/fog/light/memory VFX sprite"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/water_start/water_start_00.png",
+    "source": "generated from spritesheet slicing",
+    "note": "water_start"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/water_start/water_start_01.png",
+    "source": "generated from spritesheet slicing",
+    "note": "water_start"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/water_start/water_start_02.png",
+    "source": "generated from spritesheet slicing",
+    "note": "water_start"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/water_start/water_start_03.png",
+    "source": "generated from spritesheet slicing",
+    "note": "water_start"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/water_start/water_start_04.png",
+    "source": "generated from spritesheet slicing",
+    "note": "water_start"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/water_start/water_start_05.png",
+    "source": "generated from spritesheet slicing",
+    "note": "water_start"
+  },
+  {
+    "category": "animation_gif",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/water_start.gif",
+    "source": "generated from spritesheet frames",
+    "note": "6 frames @ 8 fps preview"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/water_walking/water_walking_00.png",
+    "source": "generated from spritesheet slicing",
+    "note": "water_walking"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/water_walking/water_walking_01.png",
+    "source": "generated from spritesheet slicing",
+    "note": "water_walking"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/water_walking/water_walking_02.png",
+    "source": "generated from spritesheet slicing",
+    "note": "water_walking"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/water_walking/water_walking_03.png",
+    "source": "generated from spritesheet slicing",
+    "note": "water_walking"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/water_walking/water_walking_04.png",
+    "source": "generated from spritesheet slicing",
+    "note": "water_walking"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/water_walking/water_walking_05.png",
+    "source": "generated from spritesheet slicing",
+    "note": "water_walking"
+  },
+  {
+    "category": "animation_gif",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/water_walking.gif",
+    "source": "generated from spritesheet frames",
+    "note": "6 frames @ 8 fps preview"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/water_stop/water_stop_00.png",
+    "source": "generated from spritesheet slicing",
+    "note": "water_stop"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/water_stop/water_stop_01.png",
+    "source": "generated from spritesheet slicing",
+    "note": "water_stop"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/water_stop/water_stop_02.png",
+    "source": "generated from spritesheet slicing",
+    "note": "water_stop"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/water_stop/water_stop_03.png",
+    "source": "generated from spritesheet slicing",
+    "note": "water_stop"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/water_stop/water_stop_04.png",
+    "source": "generated from spritesheet slicing",
+    "note": "water_stop"
+  },
+  {
+    "category": "individual_frame",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/water_stop/water_stop_05.png",
+    "source": "generated from spritesheet slicing",
+    "note": "water_stop"
+  },
+  {
+    "category": "animation_gif",
+    "file": "PortfolioArtPack/assets/environments/scene_parts/water_stop.gif",
+    "source": "generated from spritesheet frames",
+    "note": "6 frames @ 8 fps preview"
+  },
+  {
+    "category": "in_engine_screenshot",
+    "file": "PortfolioArtPack/assets/screenshots/codex_water_v1_final_gameview.png",
+    "source": "GameMain/Assets/Screenshots/codex_water_v1_final_gameview.png",
+    "note": "Unity runtime/editor visual proof"
+  },
+  {
+    "category": "in_engine_screenshot",
+    "file": "PortfolioArtPack/assets/screenshots/codex_water_wave_runtime_a.png",
+    "source": "GameMain/Assets/Screenshots/codex_water_wave_runtime_a.png",
+    "note": "Unity runtime/editor visual proof"
+  },
+  {
+    "category": "in_engine_screenshot",
+    "file": "PortfolioArtPack/assets/screenshots/codex_water_wave_runtime_b.png",
+    "source": "GameMain/Assets/Screenshots/codex_water_wave_runtime_b.png",
+    "note": "Unity runtime/editor visual proof"
+  },
+  {
+    "category": "in_engine_screenshot",
+    "file": "PortfolioArtPack/assets/screenshots/codex_water_reflection_fade_fix.png",
+    "source": "GameMain/Assets/Screenshots/codex_water_reflection_fade_fix.png",
+    "note": "Unity runtime/editor visual proof"
+  },
+  {
+    "category": "in_engine_screenshot",
+    "file": "PortfolioArtPack/assets/screenshots/codex_scene_gameview.png",
+    "source": "GameMain/Assets/Screenshots/codex_scene_gameview.png",
+    "note": "Unity runtime/editor visual proof"
+  },
+  {
+    "category": "in_engine_screenshot",
+    "file": "PortfolioArtPack/assets/screenshots/codex_characters_prefab_state_machine_visible.png",
+    "source": "GameMain/Assets/Screenshots/codex_characters_prefab_state_machine_visible.png",
+    "note": "Unity runtime/editor visual proof"
+  },
+  {
+    "category": "showcase",
+    "file": "PortfolioArtPack/showcase/characters_sprite_overview.png",
+    "source": "generated from character spritesheets",
+    "note": "static overview for portfolio page"
+  },
+  {
+    "category": "showcase",
+    "file": "PortfolioArtPack/showcase/fogharbor_scene_reconstructed_4x.png",
+    "source": "generated from environment layers",
+    "note": "4x reconstructed scene composition"
+  },
+  {
+    "category": "showcase",
+    "file": "PortfolioArtPack/showcase/environment_layers_showcase.png",
+    "source": "generated from environment assets",
+    "note": "environment layer/professional presentation board"
+  },
+  {
+    "category": "showcase",
+    "file": "PortfolioArtPack/showcase/vfx_showcase.png",
+    "source": "generated from VFX sprites",
+    "note": "VFX sprite board"
+  },
+  {
+    "category": "showcase",
+    "file": "PortfolioArtPack/showcase/in_engine_screenshots_board.png",
+    "source": "generated from selected screenshots",
+    "note": "runtime screenshot board"
+  }
+]
