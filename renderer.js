@@ -169,7 +169,7 @@
       <h4>${escapeHtml(pair[0]?.species || "角色设计")}</h4>
       <div class="redesign-pair">${pair.map((asset) => `<div class="redesign-version">
         <span>${escapeHtml(asset.version || "")}</span>
-        <div class="redesign-image-stage">${deferredImage(asset.src, asset.alt || `${asset.species || "角色"}${asset.version || ""}`)}</div>
+        <div class="redesign-image-stage" style="--redesign-asset-scale:${Number.isFinite(Number(asset.displayScale)) ? Number(asset.displayScale) : 1}">${deferredImage(asset.src, asset.alt || `${asset.species || "角色"}${asset.version || ""}`)}</div>
       </div>`).join("")}</div>
     </section>`).join("")}</div>`;
   }

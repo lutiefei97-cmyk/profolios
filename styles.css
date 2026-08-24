@@ -1205,7 +1205,7 @@ p {
   max-height: 88%;
   object-fit: contain;
   object-position: center bottom;
-  transform: none;
+  transform: scale(var(--redesign-asset-scale, 1));
   transform-origin: center bottom;
   image-rendering: pixelated;
 }

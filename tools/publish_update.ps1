@@ -3,11 +3,12 @@ Set-StrictMode -Version Latest
 
 $repositoryRoot = Split-Path -Parent $PSScriptRoot
 Set-Location $repositoryRoot
+$gitSafeDirectoryArgs = @("-c", "safe.directory=$repositoryRoot")
 
 function Invoke-Git {
     param([Parameter(Mandatory = $true)][string[]]$Arguments)
 
-    & git @Arguments
+    & git @gitSafeDirectoryArgs @Arguments
     if ($LASTEXITCODE -ne 0) {
         throw "git $($Arguments -join ' ') failed with exit code $LASTEXITCODE."
     }
@@ -25,12 +26,16 @@ if ($LASTEXITCODE -ne 0) {
     throw "Unable to build the simulator asset bundle."
 }
 
-$branch = (& git branch --show-current).Trim()
-if ($LASTEXITCODE -ne 0 -or $branch -ne "main") {
+$branchOutput = & git @gitSafeDirectoryArgs branch --show-current
+if ($LASTEXITCODE -ne 0) {
+    throw "Unable to determine the current Git branch."
+}
+$branch = ($branchOutput | Out-String).Trim()
+if ($branch -ne "main") {
     throw "Publishing is only allowed from the main branch. Current branch: $branch"
 }
 
-$changes = @(& git status --short)
+$changes = @(& git @gitSafeDirectoryArgs status --short)
 if ($LASTEXITCODE -ne 0) {
     throw "Unable to read the repository status."
 }
@@ -50,7 +55,7 @@ if ($confirmation -notmatch '^[Yy]$') {
 }
 
 Invoke-Git -Arguments @("add", "-A")
-& git diff --cached --quiet
+& git @gitSafeDirectoryArgs diff --cached --quiet
 if ($LASTEXITCODE -eq 0) {
     Write-Host "No publishable changes after applying ignore rules." -ForegroundColor Yellow
     exit 0

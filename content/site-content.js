@@ -740,10 +740,11 @@ window.PORTFOLIO_CONTENT = {
                     "version": "现版"
                   },
                   {
-                    "src": "./assets/project/characters/redesign-frames/cockatiel-old.png",
+                    "src": "./assets/project/characters/redesign-frames/cockatiel-old.png?v=20260824-1",
                     "alt": "玄凤鹦鹉旧版角色设计",
                     "species": "玄凤鹦鹉",
-                    "version": "旧版"
+                    "version": "旧版",
+                    "displayScale": 1.8
                   },
                   {
                     "src": "./assets/project/characters/redesign-frames/cockatiel-current.png",
