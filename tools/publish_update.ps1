@@ -16,6 +16,14 @@ function Invoke-Git {
 if (-not (Get-Command git -ErrorAction SilentlyContinue)) {
     throw "Git is not installed or is not available in PATH."
 }
+if (-not (Get-Command python -ErrorAction SilentlyContinue)) {
+    throw "Python is not installed or is not available in PATH."
+}
+
+& python tools/build_simulator_bundle.py
+if ($LASTEXITCODE -ne 0) {
+    throw "Unable to build the simulator asset bundle."
+}
 
 $branch = (& git branch --show-current).Trim()
 if ($LASTEXITCODE -ne 0 -or $branch -ne "main") {

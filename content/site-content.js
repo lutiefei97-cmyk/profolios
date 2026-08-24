@@ -1817,6 +1817,7 @@ window.PORTFOLIO_CONTENT = {
                 "assets": [
                   {
                     "src": "./assets/fogharbor-art-pack/video/fogharbor-demo.mp4",
+                    "poster": "./assets/fogharbor-art-pack/showcase/in_engine_screenshots_board.png",
                     "alt": "Fogharbor 场景与角色动画演示视频"
                   }
                 ],

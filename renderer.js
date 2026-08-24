@@ -76,6 +76,11 @@
       .join(" ");
   }
 
+  function deferredImage(src, alt = "", className = "") {
+    if (!src) return "";
+    return `<img${className ? ` class="${escapeHtml(className)}"` : ""} data-src="${escapeHtml(src)}" alt="${escapeHtml(alt)}" loading="lazy" decoding="async" />`;
+  }
+
   function rosterActionAttributes(action) {
     const palette = action?.palette || {};
     const randomRows = Array.isArray(palette.randomRows) ? palette.randomRows.join(",") : palette.randomRows;
@@ -110,7 +115,7 @@
   function renderRoster(media) {
     const entries = Array.isArray(media.entries) ? media.entries : [];
     const cover = media.preview?.src
-      ? `<img class="bird-roster-cover" src="${escapeHtml(media.preview.src)}" alt="${escapeHtml(media.preview.alt || media.label || "角色设计总览")}" />`
+      ? deferredImage(media.preview.src, media.preview.alt || media.label || "角色设计总览", "bird-roster-cover")
       : "";
     return `${cover}<div class="bird-roster-content">
       <header class="bird-roster-heading"><strong>${escapeHtml(media.heading || "角色设计 · 12 个物种")}</strong></header>
@@ -123,7 +128,7 @@
 
   function renderActionLibrary(media) {
     const actions = Array.isArray(media.actions) ? media.actions : [];
-    const cover = media.preview?.src ? `<img class="bird-action-cover" src="${escapeHtml(media.preview.src)}" alt="${escapeHtml(media.preview.alt || media.heading || "玄凤动作库")}" />` : "";
+    const cover = media.preview?.src ? deferredImage(media.preview.src, media.preview.alt || media.heading || "玄凤动作库", "bird-action-cover") : "";
     return `${cover}<div class="bird-action-content">
       <header><strong>${escapeHtml(media.heading || "玄凤鹦鹉动作设计")}</strong><span>${escapeHtml(media.caption || `${actions.length} 组循环动作`)}</span></header>
       <div class="bird-action-grid" style="--action-columns:${Math.max(2, Number(media.columns) || 4)}">${actions.map((action) => `<section class="bird-action-item">
@@ -135,12 +140,12 @@
 
   function renderPaletteShowcase(media) {
     const species = Array.isArray(media.species) ? media.species : [];
-    const cover = `<div class="palette-showcase-cover">${species.map((item) => `<img src="${escapeHtml(item.matrix?.src)}" alt="" />`).join("")}</div>`;
+    const cover = `<div class="palette-showcase-cover">${species.map((item) => deferredImage(item.matrix?.src, "")).join("")}</div>`;
     return `${cover}<div class="palette-showcase-content">
       <header><strong>${escapeHtml(media.heading || "三种鸟类 · 配色方案矩阵")}</strong><span>${escapeHtml(media.caption || "动作中随机切换代表配色")}</span></header>
       <div class="palette-species-grid">${species.map((item) => `<section class="palette-species-card">
         <h4>${escapeHtml(item.name)}</h4>
-        <div class="palette-matrix-stage"><img src="${escapeHtml(item.matrix?.src)}" alt="${escapeHtml(item.matrix?.alt || `${item.name}配色方案矩阵`)}" /></div>
+        <div class="palette-matrix-stage">${deferredImage(item.matrix?.src, item.matrix?.alt || `${item.name}配色方案矩阵`)}</div>
         <div class="palette-motion-stage"><canvas ${rosterActionAttributes(item.action)} width="1" height="1" role="img" aria-label="${escapeHtml(`${item.name}随机换色动作动画`)}"></canvas></div>
       </section>`).join("")}</div>
     </div>`;
@@ -148,7 +153,7 @@
 
   function renderCaptionedAssets(media) {
     return (media.assets || []).map((asset) => `<div class="media-asset-card">
-      <div class="media-asset-stage"><img src="${escapeHtml(asset.src)}" alt="${escapeHtml(asset.alt)}" /></div>
+      <div class="media-asset-stage">${deferredImage(asset.src, asset.alt)}</div>
       ${asset.caption ? `<span>${escapeHtml(asset.caption)}</span>` : ""}
     </div>`).join("");
   }
@@ -158,13 +163,13 @@
     const pairs = [];
     for (let index = 0; index < assets.length; index += 2) pairs.push(assets.slice(index, index + 2));
     const cover = media.preview?.src
-      ? `<img class="redesign-comparison-cover" src="${escapeHtml(media.preview.src)}" alt="${escapeHtml(media.preview.alt || "角色设计改进总览")}" />`
+      ? deferredImage(media.preview.src, media.preview.alt || "角色设计改进总览", "redesign-comparison-cover")
       : "";
     return `${cover}<div class="redesign-comparison-content">${pairs.map((pair) => `<section class="redesign-species">
       <h4>${escapeHtml(pair[0]?.species || "角色设计")}</h4>
       <div class="redesign-pair">${pair.map((asset) => `<div class="redesign-version">
         <span>${escapeHtml(asset.version || "")}</span>
-        <div class="redesign-image-stage"><img src="${escapeHtml(asset.src)}" alt="${escapeHtml(asset.alt || `${asset.species || "角色"}${asset.version || ""}`)}" /></div>
+        <div class="redesign-image-stage">${deferredImage(asset.src, asset.alt || `${asset.species || "角色"}${asset.version || ""}`)}</div>
       </div>`).join("")}</div>
     </section>`).join("")}</div>`;
   }
@@ -174,8 +179,8 @@
     const splitAt = Math.max(1, Math.min(assets.length, Number(media.sequenceStart) || assets.length));
     const facilities = assets.slice(0, splitAt);
     const sequence = assets.slice(splitAt);
-    return `<div class="habitat-assets">${facilities.map((asset) => `<div class="habitat-asset"><img src="${escapeHtml(asset.src)}" alt="${escapeHtml(asset.alt)}" />${asset.caption ? `<span>${escapeHtml(asset.caption)}</span>` : ""}</div>`).join("")}</div>
-      ${sequence.length ? `<section class="kauri-growth"><header><strong>${escapeHtml(media.sequenceTitle || "贝壳杉生长序列")}</strong><span>${escapeHtml(media.sequenceCaption || "幼苗 → 幼树 → 成树")}</span></header><div>${sequence.map((asset, index) => `<figure><img src="${escapeHtml(asset.src)}" alt="${escapeHtml(asset.alt)}" style="--asset-scale:${Number(asset.scale) || 1}" /><figcaption>${escapeHtml(asset.caption || `阶段 ${index + 1}`)}</figcaption></figure>`).join("")}</div></section>` : ""}`;
+    return `<div class="habitat-assets">${facilities.map((asset) => `<div class="habitat-asset">${deferredImage(asset.src, asset.alt)}${asset.caption ? `<span>${escapeHtml(asset.caption)}</span>` : ""}</div>`).join("")}</div>
+      ${sequence.length ? `<section class="kauri-growth"><header><strong>${escapeHtml(media.sequenceTitle || "贝壳杉生长序列")}</strong><span>${escapeHtml(media.sequenceCaption || "幼苗 → 幼树 → 成树")}</span></header><div>${sequence.map((asset, index) => `<figure><img data-src="${escapeHtml(asset.src)}" alt="${escapeHtml(asset.alt)}" loading="lazy" decoding="async" style="--asset-scale:${Number(asset.scale) || 1}" /><figcaption>${escapeHtml(asset.caption || `阶段 ${index + 1}`)}</figcaption></figure>`).join("")}</div></section>` : ""}`;
   }
 
   function renderMedia(media, detail = false) {
@@ -196,19 +201,18 @@
     } else if (item.type === "habitatGrowth") {
       inner = renderHabitatGrowth(item);
     } else if (item.type === "video") {
-      inner = assets.map((asset) => `<video preload="metadata" playsinline aria-hidden="true" aria-label="${escapeHtml(asset.alt || "作品演示视频")}"${asset.poster ? ` poster="${escapeHtml(asset.poster)}"` : ""}>
-        <source src="${escapeHtml(asset.src)}" type="${escapeHtml(asset.mimeType || "video/mp4")}" />
-        您的浏览器不支持 HTML5 视频。
-      </video>`).join("");
+      inner = assets.map((asset) => detail
+        ? `<div class="video-shell">${asset.poster ? deferredImage(asset.poster, asset.alt || "作品演示视频", "video-poster") : ""}<video preload="none" playsinline aria-label="${escapeHtml(asset.alt || "作品演示视频")}"${asset.poster ? ` poster="${escapeHtml(asset.poster)}"` : ""}><source data-src="${escapeHtml(asset.src)}" type="${escapeHtml(asset.mimeType || "video/mp4")}" /></video><button class="video-load-button" type="button" data-video-load aria-label="播放${escapeHtml(asset.alt || "作品演示视频")}">▶ 播放演示</button></div>`
+        : `<div class="video-thumbnail">${asset.poster ? deferredImage(asset.poster, asset.alt || "作品演示视频") : ""}<span aria-hidden="true">▶</span></div>`).join("");
     } else if (item.type === "proof") {
-      inner = `${assets.map((asset) => `<img src="${escapeHtml(asset.src)}" alt="${escapeHtml(asset.alt)}" />`).join("")}
+      inner = `${assets.map((asset) => deferredImage(asset.src, asset.alt)).join("")}
         <ul>${(item.bullets || []).map((bullet) => `<li>${escapeHtml(bullet)}</li>`).join("")}</ul>`;
     } else if (item.type === "flow") {
       inner = (item.steps || []).map((step, index, steps) =>
         `<div>${escapeHtml(step)}</div>${index < steps.length - 1 ? "<span aria-hidden=\"true\">→</span>" : ""}`
       ).join("");
     } else {
-      inner = assets.map((asset) => `<img src="${escapeHtml(asset.src)}" alt="${escapeHtml(asset.alt)}" />`).join("");
+      inner = assets.map((asset) => deferredImage(asset.src, asset.alt)).join("");
     }
 
     return `<figure class="${mediaClass(item, detail)}" style="${mediaStyle(item)}"${item.label ? ` aria-label="${escapeHtml(item.label)}"` : ""}>${inner}</figure>`;
@@ -223,7 +227,7 @@
     if (preview || poster) {
       const source = preview || poster;
       const alt = item.preview?.alt || firstAsset?.alt || item.label || "作品缩略图";
-      return `<figure class="${mediaClass(item)} work-card-thumbnail" style="${mediaStyle(item)}"><img src="${escapeHtml(source)}" alt="${escapeHtml(alt)}" /></figure>`;
+      return `<figure class="${mediaClass(item)} work-card-thumbnail" style="${mediaStyle(item)}">${deferredImage(source, alt)}</figure>`;
     }
 
     return renderMedia(item);
@@ -396,12 +400,48 @@
   }
 
   function activateMedia(root = document) {
+    root.querySelectorAll?.("img[data-src]").forEach((image) => {
+      if (image.src || !image.dataset.src) return;
+      image.src = image.dataset.src;
+      image.removeAttribute("data-src");
+    });
+    root.querySelectorAll?.("[data-video-load]").forEach((button) => {
+      if (button.dataset.videoReady) return;
+      button.dataset.videoReady = "true";
+      button.addEventListener("click", () => {
+        const shell = button.closest(".video-shell");
+        const video = shell?.querySelector("video");
+        const source = video?.querySelector("source[data-src]");
+        if (!video || !source) return;
+        source.src = source.dataset.src;
+        source.removeAttribute("data-src");
+        video.controls = true;
+        button.hidden = true;
+        video.load();
+        video.play().catch(() => {});
+      });
+    });
     root.querySelectorAll?.("canvas[data-roster-sprite]").forEach((canvas) => {
       prepareRosterSprite(canvas).catch(() => {
         canvas.dataset.rosterReady = "failed";
         canvas.closest(".bird-roster-stage, .bird-action-stage, .palette-motion-stage")?.classList.add("is-unavailable");
       });
     });
+  }
+
+  function observeMedia(root = document) {
+    if (!("IntersectionObserver" in window)) {
+      activateMedia(root);
+      return;
+    }
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        activateMedia(entry.target);
+        observer.unobserve(entry.target);
+      });
+    }, { rootMargin: "160px" });
+    root.querySelectorAll?.("img[data-src]").forEach((image) => observer.observe(image));
   }
 
   function renderHome(page) {
@@ -432,7 +472,7 @@
     return `<article class="work-card ${width}${special}" style="${mediaStyle(item.media)}" data-work-id="${escapeHtml(item.id)}" data-category="${escapeHtml(item.category)}">
       ${renderWorkThumbnail(item.media)}
       <div><span>${escapeHtml(item.kicker)}</span><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.description)}</p></div>
-      <template data-work-detail-template>${renderMedia(item.media)}</template>
+      <template data-work-detail-template>${renderMedia(item.media, true)}</template>
     </article>`;
   }
 
@@ -538,5 +578,5 @@
     window.__PORTFOLIO_CONTENT__ = content;
   }
 
-  window.PortfolioRenderer = { render, renderMedia, activateMedia, escapeHtml };
+  window.PortfolioRenderer = { render, renderMedia, activateMedia, observeMedia, escapeHtml };
 })();

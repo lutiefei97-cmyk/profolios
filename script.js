@@ -366,6 +366,7 @@ function showProject(project, options = {}) {
   const activeProjectPanel = Array.from(projectPanels)
     .find((panel) => panel.dataset.projectPanel === currentProject);
   if (activeProjectPanel && currentProject !== "index") {
+    window.PortfolioRenderer.observeMedia(activeProjectPanel);
     const requestedCard = workId
       ? activeProjectPanel.querySelector(`.work-card[data-work-id="${CSS.escape(workId)}"]`)
       : null;
@@ -433,6 +434,7 @@ function selectWorkCard(card, options = {}) {
       video.controls = true;
       video.removeAttribute("aria-hidden");
     });
+    window.PortfolioRenderer.activateMedia(card);
     window.PortfolioRenderer.activateMedia(detailMedia);
   }
 
@@ -764,12 +766,6 @@ window.addEventListener("resize", () => {
 projectPanels.forEach((panel) => {
   if (panel.dataset.projectPanel === "index") return;
   updateVisibleWorkCount(panel);
-  selectWorkCard(panel.querySelector(".work-card"), {
-    updateRoute: false,
-    openDetail: false,
-    focusDetail: false,
-    scrollCard: false,
-  });
 });
 updateClock();
 window.setInterval(updateClock, 30_000);

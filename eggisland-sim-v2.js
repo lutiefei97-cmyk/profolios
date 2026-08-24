@@ -5,8 +5,32 @@
   const MAX_FOOD = 18;
   const SENSE_RADIUS = 430;
   const IMAGE_LOAD_TIMEOUT_MS = 12_000;
+  const BUNDLE_LOAD_TIMEOUT_MS = 8_000;
+  let bundlePromise = null;
   const randomBetween = (min, max) => min + Math.random() * (max - min);
   const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+
+  function loadAssetBundle(version) {
+    if (window.EGGISLAND_SIM_ASSETS) return Promise.resolve(true);
+    if (bundlePromise) return bundlePromise;
+    bundlePromise = new Promise((resolve) => {
+      const script = document.createElement("script");
+      let settled = false;
+      const finish = (available) => {
+        if (settled) return;
+        settled = true;
+        window.clearTimeout(timeoutId);
+        resolve(available);
+      };
+      const timeoutId = window.setTimeout(() => finish(false), BUNDLE_LOAD_TIMEOUT_MS);
+      script.async = true;
+      script.src = `./assets/simulator/bundle.js?v=${encodeURIComponent(version || "current")}`;
+      script.onload = () => finish(Boolean(window.EGGISLAND_SIM_ASSETS));
+      script.onerror = () => finish(false);
+      document.head.append(script);
+    });
+    return bundlePromise;
+  }
 
   function prepare(content) {
     if (!content?.site || !content?.pages) return;
@@ -125,6 +149,7 @@
       }
 
       try {
+        await loadAssetBundle(this.manifest.version);
         let completed = 0;
         const total = sources.size;
         await Promise.all([...sources].map(async (source) => {
@@ -163,6 +188,11 @@
         image.decoding = "async";
         image.onload = () => finish(resolve, image);
         image.onerror = () => finish(reject, new Error(`无法载入：${source}`));
+        const bundledSource = window.EGGISLAND_SIM_ASSETS?.[source];
+        if (bundledSource) {
+          image.src = bundledSource;
+          return;
+        }
         const separator = source.includes("?") ? "&" : "?";
         image.src = `${source}${separator}v=${this.manifest.version}`;
       });

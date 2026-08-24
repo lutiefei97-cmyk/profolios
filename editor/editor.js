@@ -298,7 +298,7 @@
       : mediaType === "actionLibrary" ? renderActionLibraryEditor(path)
       : mediaType === "paletteShowcase" ? renderPaletteShowcaseEditor(path)
       : mediaType === "redesignComparison" ? listSection("旧版与现版素材", [...path, "assets"], [{ label: "物种", key: "species" }, { label: "版本", key: "version" }, { label: "图片", key: "src", asset: true }, { label: "无障碍图片说明", key: "alt", type: "textarea" }], "asset")
-      : mediaType === "video" ? listSection("视频文件", [...path, "assets"], [{ label: "MP4 视频", key: "src", asset: true }, { label: "视频说明", key: "alt", type: "textarea" }], "asset")
+      : mediaType === "video" ? listSection("视频文件", [...path, "assets"], [{ label: "MP4 视频", key: "src", asset: true }, { label: "封面图片（建议填写）", key: "poster", asset: true }, { label: "视频说明", key: "alt", type: "textarea" }], "asset")
       : ["uiPair", "artCollection", "cardPair"].includes(mediaType) ? listSection("带说明素材", [...path, "assets"], [{ label: "图片/动图", key: "src", asset: true }, { label: "图片说明", key: "caption" }, { label: "无障碍图片说明", key: "alt", type: "textarea" }], "asset")
       : listSection("素材文件", [...path, "assets"], [{ label: "图片/动图", key: "src", asset: true }, { label: "无障碍图片说明", key: "alt", type: "textarea" }], "asset");
     const collectionEditor = mediaType === "artCollection"

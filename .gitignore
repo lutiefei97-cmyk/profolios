@@ -5,6 +5,7 @@ content/backups/
 __pycache__/
 *.py[cod]
 *.log
+.playwright-cli/
 
 # OS and editor metadata
 .DS_Store

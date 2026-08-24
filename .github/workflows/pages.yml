@@ -26,6 +26,8 @@ jobs:
         uses: actions/checkout@v6
       - name: Configure Pages
         uses: actions/configure-pages@v5
+      - name: Build simulator asset bundle
+        run: python tools/build_simulator_bundle.py
       - name: Prepare public site
         shell: bash
         run: |
