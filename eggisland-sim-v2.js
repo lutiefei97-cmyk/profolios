@@ -39,7 +39,7 @@
     content.pages[APP_ID] = {
       label: "蛋岛模拟器",
       taskLabel: "蛋岛模拟器",
-      icon: "./assets/ui/icon-bird.png",
+      icon: "./assets/ui/icon-simulator-egg.png",
       startDescription: "在桌面底部唤醒蛋岛鸟群",
       window: { width: 1280, height: 576 },
     };

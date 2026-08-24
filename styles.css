@@ -138,6 +138,13 @@ img {
   max-height: 50px;
 }
 
+.desktop-icon[data-app="simulator"] .icon-frame img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
 .desktop-icon span:last-child {
   padding: 1px 3px;
   font-size: 16px;
