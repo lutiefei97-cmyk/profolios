@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>作品集内容编辑器</title>
+    <link rel="icon" href="../assets/ui/icon-bird.png" />
+    <link rel="preload" href="../assets/fonts/unifont-pixel-black-13.0.01.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="stylesheet" href="../fonts.css?v=20260823-1" />
+    <link rel="stylesheet" href="./editor.css" />
+  </head>
+  <body>
+    <header class="editor-toolbar">
+      <div><strong>作品集内容编辑器</strong><span class="save-state" data-save-state>正在读取内容…</span></div>
+      <div class="toolbar-group">
+        <button type="button" data-action="undo" title="撤销上一次修改">撤销</button>
+        <button type="button" data-action="redo" title="恢复修改">重做</button>
+        <button type="button" data-action="export">导出备份</button>
+        <label class="button-like">导入备份<input type="file" accept="application/json,.json" data-import hidden /></label>
+        <button class="primary" type="button" data-action="save">保存并发布</button>
+      </div>
+    </header>
+
+    <main class="editor-layout">
+      <aside class="editor-sidebar">
+        <nav class="page-nav" data-page-nav aria-label="编辑页面"></nav>
+        <section class="content-tree" data-content-tree></section>
+      </aside>
+
+      <section class="preview-column">
+        <div class="preview-toolbar">
+          <strong>实时预览</strong>
+          <div class="viewport-buttons" role="group" aria-label="预览宽度">
+            <button class="active" type="button" data-viewport="desktop">电脑</button>
+            <button type="button" data-viewport="tablet">平板</button>
+            <button type="button" data-viewport="mobile">手机</button>
+          </div>
+          <a href="../index.html" target="_blank" rel="noopener">在新窗口打开</a>
+        </div>
+        <div class="preview-stage" data-preview-stage>
+          <div class="preview-frame-wrap" data-preview-wrap>
+            <iframe title="作品集实时预览" src="../index.html#home" data-preview></iframe>
+          </div>
+        </div>
+      </section>
+
+      <aside class="inspector" data-inspector aria-live="polite"></aside>
+    </main>
+
+    <div class="toast" data-toast hidden></div>
+    <script src="./editor.js"></script>
+  </body>
+</html>

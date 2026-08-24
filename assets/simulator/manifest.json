@@ -1,0 +1,419 @@
+{
+  "version": 8,
+  "sourceScene": "Assets/Scenes/dandaodeniao.unity",
+  "logicalSize": {
+    "width": 1280,
+    "height": 576
+  },
+  "pixelsPerUnit": 32,
+  "camera": {
+    "position": [
+      0,
+      7,
+      -10
+    ],
+    "orthographicSize": 9,
+    "transparent": true
+  },
+  "groundY": 552,
+  "species": [
+    {
+      "id": "cockatiel",
+      "label": "玄凤鹦鹉",
+      "frameSize": 64,
+      "spriteFacesRight": false,
+      "walkSpeed": 51.2,
+      "actions": {
+        "idle": {
+          "src": "./assets/simulator/sprites/cockatiel-idle.png",
+          "frames": 8,
+          "fps": 12
+        },
+        "walk": {
+          "src": "./assets/simulator/sprites/cockatiel-walk.png",
+          "frames": 8,
+          "fps": 12
+        },
+        "eat": {
+          "src": "./assets/simulator/sprites/cockatiel-eat.png",
+          "frames": 8,
+          "fps": 12
+        },
+        "fly": {
+          "src": "./assets/simulator/sprites/cockatiel-fly.png",
+          "frames": 4,
+          "fps": 12
+        }
+      }
+    },
+    {
+      "id": "lovebird",
+      "label": "牡丹鹦鹉",
+      "frameSize": 64,
+      "spriteFacesRight": false,
+      "walkSpeed": 51.2,
+      "actions": {
+        "idle": {
+          "src": "./assets/simulator/sprites/lovebird-idle.png",
+          "frames": 4,
+          "fps": 12
+        },
+        "walk": {
+          "src": "./assets/simulator/sprites/lovebird-walk.png",
+          "frames": 6,
+          "fps": 12
+        },
+        "eat": {
+          "src": "./assets/simulator/sprites/lovebird-eat.png",
+          "frames": 8,
+          "fps": 12
+        },
+        "fly": {
+          "src": "./assets/simulator/sprites/lovebird-fly.png",
+          "frames": 5,
+          "fps": 12
+        }
+      }
+    },
+    {
+      "id": "budgerigar",
+      "label": "虎皮鹦鹉",
+      "frameSize": 64,
+      "spriteFacesRight": false,
+      "walkSpeed": 51.2,
+      "actions": {
+        "idle": {
+          "src": "./assets/simulator/sprites/budgerigar-idle.png",
+          "frames": 5,
+          "fps": 12
+        },
+        "walk": {
+          "src": "./assets/simulator/sprites/budgerigar-walk.png",
+          "frames": 6,
+          "fps": 12
+        },
+        "eat": {
+          "src": "./assets/simulator/sprites/budgerigar-eat.png",
+          "frames": 8,
+          "fps": 12
+        },
+        "fly": {
+          "src": "./assets/simulator/sprites/budgerigar-fly.png",
+          "frames": 4,
+          "fps": 12
+        }
+      }
+    },
+    {
+      "id": "sun-conure",
+      "label": "小太阳鹦鹉",
+      "frameSize": 64,
+      "spriteFacesRight": false,
+      "walkSpeed": 51.2,
+      "actions": {
+        "idle": {
+          "src": "./assets/simulator/sprites/sun-conure-idle.png",
+          "frames": 4,
+          "fps": 12
+        },
+        "walk": {
+          "src": "./assets/simulator/sprites/sun-conure-walk.png",
+          "frames": 9,
+          "fps": 12
+        },
+        "eat": {
+          "src": "./assets/simulator/sprites/sun-conure-eat.png",
+          "frames": 8,
+          "fps": 12
+        },
+        "fly": {
+          "src": "./assets/simulator/sprites/sun-conure-fly.png",
+          "frames": 5,
+          "fps": 12
+        }
+      }
+    },
+    {
+      "id": "gouldian-finch",
+      "label": "七彩文鸟",
+      "frameSize": 64,
+      "spriteFacesRight": false,
+      "walkSpeed": 51.2,
+      "actions": {
+        "idle": {
+          "src": "./assets/simulator/sprites/gouldian-finch-idle.png",
+          "frames": 4,
+          "fps": 12
+        },
+        "walk": {
+          "src": "./assets/simulator/sprites/gouldian-finch-walk.png",
+          "frames": 5,
+          "fps": 12
+        },
+        "eat": {
+          "src": "./assets/simulator/sprites/gouldian-finch-eat.png",
+          "frames": 9,
+          "fps": 12
+        },
+        "fly": {
+          "src": "./assets/simulator/sprites/gouldian-finch-fly.png",
+          "frames": 4,
+          "fps": 12
+        }
+      }
+    },
+    {
+      "id": "galah",
+      "label": "粉红凤头鹦鹉",
+      "frameSize": 128,
+      "spriteFacesRight": false,
+      "walkSpeed": 51.2,
+      "actions": {
+        "idle": {
+          "src": "./assets/simulator/sprites/galah-idle.png",
+          "frames": 4,
+          "fps": 12
+        },
+        "walk": {
+          "src": "./assets/simulator/sprites/galah-walk.png",
+          "frames": 10,
+          "fps": 12
+        },
+        "eat": {
+          "src": "./assets/simulator/sprites/galah-eat.png",
+          "frames": 10,
+          "fps": 12
+        },
+        "fly": {
+          "src": "./assets/simulator/sprites/galah-fly.png",
+          "frames": 5,
+          "fps": 12
+        }
+      }
+    },
+    {
+      "id": "caique",
+      "label": "凯克鹦鹉",
+      "frameSize": 64,
+      "spriteFacesRight": false,
+      "walkSpeed": 51.2,
+      "actions": {
+        "idle": {
+          "src": "./assets/simulator/sprites/caique-idle.png",
+          "frames": 4,
+          "fps": 12
+        },
+        "walk": {
+          "src": "./assets/simulator/sprites/caique-walk.png",
+          "frames": 8,
+          "fps": 12
+        },
+        "eat": {
+          "src": "./assets/simulator/sprites/caique-eat.png",
+          "frames": 8,
+          "fps": 12
+        },
+        "fly": {
+          "src": "./assets/simulator/sprites/caique-fly.png",
+          "frames": 5,
+          "fps": 12
+        }
+      }
+    },
+    {
+      "id": "greater-sulphur-crested-cockatoo",
+      "label": "大葵花凤头鹦鹉",
+      "frameSize": 128,
+      "spriteFacesRight": false,
+      "walkSpeed": 51.2,
+      "actions": {
+        "idle": {
+          "src": "./assets/simulator/sprites/greater-sulphur-crested-cockatoo-idle.png",
+          "frames": 4,
+          "fps": 12
+        },
+        "walk": {
+          "src": "./assets/simulator/sprites/greater-sulphur-crested-cockatoo-walk.png",
+          "frames": 10,
+          "fps": 12
+        },
+        "eat": {
+          "src": "./assets/simulator/sprites/greater-sulphur-crested-cockatoo-eat.png",
+          "frames": 10,
+          "fps": 12
+        },
+        "fly": {
+          "src": "./assets/simulator/sprites/greater-sulphur-crested-cockatoo-fly.png",
+          "frames": 5,
+          "fps": 12
+        }
+      }
+    },
+    {
+      "id": "moluccan-cockatoo",
+      "label": "摩鹿加凤头鹦鹉",
+      "frameSize": 128,
+      "spriteFacesRight": false,
+      "walkSpeed": 51.2,
+      "actions": {
+        "idle": {
+          "src": "./assets/simulator/sprites/moluccan-cockatoo-idle.png",
+          "frames": 4,
+          "fps": 12
+        },
+        "walk": {
+          "src": "./assets/simulator/sprites/moluccan-cockatoo-walk.png",
+          "frames": 10,
+          "fps": 12
+        },
+        "eat": {
+          "src": "./assets/simulator/sprites/moluccan-cockatoo-eat.png",
+          "frames": 10,
+          "fps": 12
+        },
+        "fly": {
+          "src": "./assets/simulator/sprites/moluccan-cockatoo-fly.png",
+          "frames": 5,
+          "fps": 12
+        }
+      }
+    },
+    {
+      "id": "monk-parakeet",
+      "label": "和尚鹦鹉",
+      "frameSize": 64,
+      "spriteFacesRight": false,
+      "walkSpeed": 51.2,
+      "actions": {
+        "idle": {
+          "src": "./assets/simulator/sprites/monk-parakeet-idle.png",
+          "frames": 4,
+          "fps": 12
+        },
+        "walk": {
+          "src": "./assets/simulator/sprites/monk-parakeet-walk.png",
+          "frames": 7,
+          "fps": 12
+        },
+        "eat": {
+          "src": "./assets/simulator/sprites/monk-parakeet-eat.png",
+          "frames": 7,
+          "fps": 12
+        },
+        "fly": {
+          "src": "./assets/simulator/sprites/monk-parakeet-fly.png",
+          "frames": 5,
+          "fps": 12
+        }
+      }
+    },
+    {
+      "id": "umbrella-cockatoo",
+      "label": "雨伞凤头鹦鹉",
+      "frameSize": 128,
+      "spriteFacesRight": false,
+      "walkSpeed": 51.2,
+      "actions": {
+        "idle": {
+          "src": "./assets/simulator/sprites/umbrella-cockatoo-idle.png",
+          "frames": 4,
+          "fps": 12
+        },
+        "walk": {
+          "src": "./assets/simulator/sprites/umbrella-cockatoo-walk.png",
+          "frames": 10,
+          "fps": 12
+        },
+        "eat": {
+          "src": "./assets/simulator/sprites/umbrella-cockatoo-eat.png",
+          "frames": 10,
+          "fps": 12
+        },
+        "fly": {
+          "src": "./assets/simulator/sprites/umbrella-cockatoo-fly.png",
+          "frames": 5,
+          "fps": 12
+        }
+      }
+    },
+    {
+      "id": "palm-cockatoo",
+      "label": "棕榈凤头鹦鹉",
+      "frameSize": 128,
+      "spriteFacesRight": false,
+      "walkSpeed": 51.2,
+      "actions": {
+        "idle": {
+          "src": "./assets/simulator/sprites/palm-cockatoo-idle.png",
+          "frames": 4,
+          "fps": 12
+        },
+        "walk": {
+          "src": "./assets/simulator/sprites/palm-cockatoo-walk.png",
+          "frames": 10,
+          "fps": 12
+        },
+        "eat": {
+          "src": "./assets/simulator/sprites/palm-cockatoo-eat.png",
+          "frames": 10,
+          "fps": 12
+        },
+        "fly": {
+          "src": "./assets/simulator/sprites/palm-cockatoo-fly.png",
+          "frames": 5,
+          "fps": 12
+        }
+      }
+    }
+  ],
+  "scene": {
+    "world": "./assets/simulator/scene/world-render.png",
+    "farmland": "./assets/simulator/scene/farmland-overlay.png",
+    "facilitiesUnder": "./assets/simulator/scene/facility-under.png",
+    "facilitiesOver": "./assets/simulator/scene/facility-over.png",
+    "treeRect": [
+      905,
+      176,
+      344,
+      337
+    ],
+    "crops": [
+      {
+        "src": "./assets/simulator/scene/crops/millet-mature.png",
+        "positions": [
+          [
+            352,
+            552
+          ],
+          [
+            416,
+            552
+          ],
+          [
+            480,
+            552
+          ]
+        ]
+      },
+      {
+        "src": "./assets/simulator/scene/crops/pepper-fruiting.png",
+        "positions": [
+          [
+            608,
+            552
+          ],
+          [
+            672,
+            552
+          ]
+        ]
+      }
+    ]
+  },
+  "food": "./assets/simulator/food/millet-ear.png",
+  "hud": {
+    "base": "./assets/simulator/hud/bird-hud.png",
+    "width": 88,
+    "height": 80
+  }
+}

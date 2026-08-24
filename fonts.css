@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Unifont Pixel Black";
+  src: url("./assets/fonts/unifont-pixel-black-13.0.01.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+:root {
+  --portfolio-font: "Unifont Pixel Black", SimSun, "宋体", "Microsoft YaHei", system-ui, sans-serif;
+}

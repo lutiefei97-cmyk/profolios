@@ -1,7 +1,10 @@
 # Generated previews and local tooling artifacts
 output/
+tmp/
+content/backups/
 __pycache__/
 *.py[cod]
+*.log
 
 # OS and editor metadata
 .DS_Store
